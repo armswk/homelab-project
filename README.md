@@ -37,10 +37,13 @@ Applications:
 - Collabora
 
 ## Goals
-
+-[] move from docker compose to Kubernetes 
 ## TODO
-- [] Demo Environment for Kubernetes Cluster
+- [x] Install K3S 
+- []
 
 # Log
+
 ## Date
-- 
+24/02/2025
+install k3s and config MetalLB for External IP Assignment, additionally create a sshmenu script for personal ssh portal
