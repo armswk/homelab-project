@@ -5,7 +5,8 @@ metadata:
   namespace: metallb-system
 spec:
   addresses:
-  - 192.168.20.35-192.168.20.35  # Use a free IP range from your network
+  #- 192.168.20.35-192.168.20.35  # Use a free IP range from your network
+  - 10.7.7.95-10.7.7.95
 ---
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement

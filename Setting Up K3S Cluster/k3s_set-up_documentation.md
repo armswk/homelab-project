@@ -40,6 +40,14 @@ sudo nano /etc/rancher/k3s/config.yaml
 node-ip: "server ip"
 node-external-ip: "server ip"
 
+for changing the ip
+sudo systemctl stop k3s
+sudo rm -rf /var/lib/rancher/k3s/server/db/
+sudo rm -rf /var/lib/rancher/k3s/server/manifests/
+sudo systemctl restart k3s
+
+
+
 # Use MetalLB for External IP Assignment
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/config/manifests/metallb-native.yaml
 
