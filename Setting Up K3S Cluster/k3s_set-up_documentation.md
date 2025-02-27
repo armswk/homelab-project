@@ -54,3 +54,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.
 sudo apt-get update
 sudo apt-get install helm
 ```
+config the network for helm to communicate k3s
+export KUBECONFIG=~/.kube/config
+and then edit the ip 
+helm ls --all-namespaces
