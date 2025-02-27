@@ -39,8 +39,8 @@ Applications:
 ## Goals
 -[] move from docker compose to Kubernetes 
 ## TODO/TASK
-- [x] Install K3S 
-- [] config traefik as reverse proxy
+- [x] Install K3S (26.02.2025)
+- [x] config traefik as reverse proxy (27.02.2025)
 
 # Log
 27.02.2025
