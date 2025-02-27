@@ -57,3 +57,19 @@ kubectl apply -f ingress.yaml
 Visit https://traefik.local.narybits.site
 
 k8s network: ingress secret middleware header
+
+# Cert-Manager Installation
+Add repo
+helm repo add jetstack https://charts.jetstack.io
+
+Update it
+helm repo update
+
+Create our namespace
+kubectl create namespace cert-manager
+
+!!!Be sure to change this to the latest version of cert-manager
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.17.1/cert-manager.crds.yaml
+
+Install with helm
+helm install cert-manager jetstack/cert-manager --namespace cert-manager --values=values.yaml --version v1.17.1
