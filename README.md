@@ -43,6 +43,14 @@ Applications:
 - [] config traefik as reverse proxy
 
 # Log
+27.02.2025
+- removing CF Key
+```
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch applications/traefik-cert-network-manager/cert-manager/issuers/secret-cf-token.yaml" \
+  --prune-empty --tag-name-filter cat -- --all
+git push origin --force --all
+git log -- applications/traefik-cert-network-manager/cert-manager/issuers/secret-cf-token.yaml
 
 ## Date
 24/02/2025
