@@ -11,3 +11,6 @@ helm install <project_name> <repo_name>
 
 to check which helm were used/deployed
 helm ls --namespace <namespace>
+
+helm history <project_name>
+helm rollback <project_name> <revision_num>

@@ -31,8 +31,18 @@ restart the network service
 sudo systemctl restart networking
 # Install K3S
 ```
-curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--docker" sh -
+curl -sfL https://get.k3s.io | sh -
 k3s kubectl get node 
+```
+
+side note: docker is Deprecated for kubernetes, recommend using containerd unless you need to use docker compose
+```
+curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--docker" sh -
+```
+
+if it already deployed and I want to switch, you need to reinstall it and make a backup of the state in the folllowing path 
+```
+sudo cp -r /var/lib/rancher/k3s /var/lib/rancher/k3s-backup
 ```
 
 # config server internal and external ip for local use
