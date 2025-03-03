@@ -23,4 +23,5 @@ spec:
       middlewares:
         - name: default-headers
   tls:
+    passthrough: true
     secretName: local-narybits-site-tls

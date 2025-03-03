@@ -1,0 +1,21 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: k3s-api
+  namespace: kube-system
+  annotations: 
+    kubernetes.io/ingress.class: traefik-external
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`api-k3s.local.narybits.site`)
+      kind: Rule
+      services:
+        - name: k3s-api
+          port: 443
+      #middlewares:
+        #- name: default-headers
+  tls:
+    #passthrough: true
+    secretName: local-narybits-site-tls

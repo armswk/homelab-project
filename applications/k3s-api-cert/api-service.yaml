@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: k3s-api
+  namespace: kube-system
+spec:
+  selector:
+    component: apiserver
+  ports:
+    - protocol: TCP
+      port: 443
+      targetPort: 6443
+  type: ClusterIP
