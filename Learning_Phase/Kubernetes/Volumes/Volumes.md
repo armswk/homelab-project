@@ -10,3 +10,6 @@ Type of state
 | Supports many different Drivers and Types | no Driver/Type Support |
 |Volumes aren't necessarily persistent | Volume persist until manually cleared |
 Volumes survive after Container restarts and remove | Volumes survive after Container restarts and remove | 
+
+for more information </br>
+[https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
