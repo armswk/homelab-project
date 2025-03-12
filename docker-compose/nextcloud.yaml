@@ -1,0 +1,56 @@
+networks:
+  nextcloud:
+    external: true
+    name: nextcloud
+
+volumes:
+  nextcloud:
+  db:
+  #redis:
+
+services:
+
+  db:
+    image: mariadb:11.4
+    container_name: db
+    networks:
+      - nextcloud
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    volumes:
+      #- ./db:/var/lib/mysql
+    environment:
+      #- MYSQL_ROOT_PASSWORD=MYSQL_PWD
+      #- MYSQL_PASSWORD=MYSQL_PWD
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+
+  nextcloud:
+    image: nextcloud
+    container_name: nextcloud
+    networks:
+      - nextcloud
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - db
+    volumes:
+      #- ./html:/var/www/html
+    environment:
+      #- NEXTCLOUD_TRUSTED_DOMAINS=10.7.7.70 nextcloud.narybits.site nextcloud.armswk.me
+      #- MYSQL_PASSWORD=MYSQL_PWD
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_HOST=db
+      - PHP_UPLOAD_LIMIT=16G
+      - PHP_POST_MAX_SIZE=16G
+      - PHP_MAX_INPUT_TIME=3600
+      - PHP_MAX_EXECUTION_TIME=3600
+      - PHP_MEMORY_LIMIT=4096M
+      #- REDIS_HOST=redis_container_name
+      #- SMTP_HOST=IP
+      - SMTP_PORT=25
+      #- MAIL_FROM_ADDRESS=nextcloud
+      #- MAIL_DOMAIN=mail_domian_name
+      #- SMTP_AUTHTYPE=PLAIN

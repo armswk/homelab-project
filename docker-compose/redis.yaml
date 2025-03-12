@@ -1,0 +1,18 @@
+networks:
+  nextcloud:
+    external: true
+    name: nextcloud
+  photoprism:
+    external: true
+    name: photoprism
+
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis
+    volumes:
+      - ./data:/data
+    restart: always
+    networks:
+      - nextcloud
+      - photoprism
