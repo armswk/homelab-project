@@ -41,6 +41,8 @@ Applications:
 ## TODO/TASK
 - [x] Install K3S (26.02.2025)
 - [x] config traefik as reverse proxy (27.02.2025)
+- [] NFS Server Setup
+- [] PostGres or Mariadb Setup
 
 # Log
 27.02.2025
