@@ -42,7 +42,8 @@ Applications:
 - [x] Install K3S (26.02.2025)
 - [x] config traefik as reverse proxy (27.02.2025)
 - [] NFS Server Setup
-- [] PostGres or Mariadb Setup
+- [] Presistent Volume Kubernetes Setup
+- [] PostGres Setup
 
 # Log
 27.02.2025
