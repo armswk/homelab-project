@@ -41,7 +41,10 @@ systemctl status ssh
 ```jsx
 ssh-keygen -A
 ```
-
+## ssh through gatewaz
+```jsx
+ssh -Pav filename -e "ssh gatewayaddress ssh" destination_address:/.../../
+```
 ## Multiple SSH github key
 
 Ref: https://gist.github.com/oanhnn/80a89405ab9023894df7
