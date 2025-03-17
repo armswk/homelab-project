@@ -1,0 +1,48 @@
+# networks:
+#   frontend:
+#     external: true
+#     name: frontend
+#   npm-network:
+#     external: true
+#     name: npm-network
+
+volumes:
+  nginxproxymanager-data:
+  nginxproxymanager-ssl:
+  nginxproxymanager-db:
+
+services:
+  nginxproxymanager:
+    container_name: npm_app
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: always
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+      - '25565:25565'
+    environment:
+      DB_MYSQL_HOST: "nginxproxymanager-db"
+      DB_MYSQL_PORT: 3306
+      DB_MYSQL_USER: "npm"
+      DB_MYSQL_PASSWORD: "changeme_Password"
+      DB_MYSQL_NAME: "npm"
+    volumes:
+      - nginxproxymanager-data:/data
+      - nginxproxymanager-ssl:/etc/letsencrypt
+    networks:
+      - frontend
+      - npm-network
+  nginxproxymanager-db:
+    container_name: npm_db
+    image: 'mariadb:latest'
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'npm'
+      MYSQL_DATABASE: 'npm'
+      MYSQL_USER: 'npm'
+      MYSQL_PASSWORD: 'changeme_Password'
+    volumes:
+      - nginxproxymanager-db:/var/lib/mysql
+    networks:
+      - npm-network
