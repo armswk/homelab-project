@@ -1,0 +1,9 @@
+services:
+    watchtower:
+        command: '--run-once --cleanup --debug'
+        image: containrrr/watchtower
+        volumes:
+            - '/var/run/docker.sock:/var/run/docker.sock'
+        container_name: watchtower
+
+##docker start watchtower && docker logs --follow watchtower
