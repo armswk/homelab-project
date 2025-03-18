@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: databaseName-configmap
+data:
+ LD_Server_Port: "3003"
+ LD_DB_Engine: postgres
+ LD_Database: linkding
+ LD_DB_Port: "5432"
+ LD: get from kubectl get svc
