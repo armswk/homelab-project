@@ -1,13 +1,6 @@
 ref: https://github.com/lm-academy/terraform-course/blob/main/exercises/exercise02-terraform.md
-# Creating VPCs and Subnets with Terraform and IaC
 
-## Introduction
-
-In this exercise, we will walk through the process of creating a basic infrastructure on AWS using Terraform, an open-source Infrastructure as Code (IaC) tool. Specifically, we'll create a Virtual Private Cloud (VPC) with two subnets, a public and a private one. We will also create an Internet gateway and a route table, which will be associated with our public subnet. This setup mimics a typical cloud infrastructure configuration, separating resources into public and private subnets for improved security and control.
-
-## Desired Outcome
-
-If you wish to give it a shot before looking into the detailed step-by-step and the solution videos, here is an overview of what the created solution should deploy:
+## Introduction: Creating VPCs and Subnets with Terraform and IaC
 
 1. A VPC with a CIDR block of `10.0.0.0/16`.
 2. One public subnet with a CIDR block of `10.0.0.0/24`.
@@ -97,7 +90,3 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
       route_table_id = aws_route_table.public_rtb.id
     }
     ```
-
-## Congratulations on Completing the Exercise!
-
-Well done on successfully creating a basic infrastructure on AWS using Terraform. You've shown great understanding of Infrastructure as Code (IaC) and how to use Terraform to create and manage a VPC with subnets and Internet gateway on AWS. Keep up the good work and continue to expand your knowledge in this area. You're doing fantastic!
