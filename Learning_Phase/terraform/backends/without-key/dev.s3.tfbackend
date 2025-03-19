@@ -1,0 +1,6 @@
+# For illustration purposes, not actively used.
+#terraform init -backend-config="file-path"
+
+bucket = "terraform-remote-backend"
+key    = "dev/state.tfstate"
+region = "eu-west-1"
