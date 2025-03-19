@@ -1,3 +1,4 @@
+ref: https://github.com/lm-academy/terraform-course/blob/main/exercises/exercise02-terraform.md
 # Creating VPCs and Subnets with Terraform and IaC
 
 ## Introduction
