@@ -12,7 +12,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-course-lauromueller-remote-backend"
+    bucket = "terraform-remote-backend"
     key    = "04-backends/state.tfstate"
     region = "eu-west-1"
   }
