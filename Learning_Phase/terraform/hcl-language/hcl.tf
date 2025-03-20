@@ -35,6 +35,7 @@ output "bucket_id" {
   value = aws_s3_bucket.my_bucket.id
 }
 
+#This variable is only available within this Terraform project.
 locals {
   local_example = "This is a local variable"
 }
