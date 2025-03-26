@@ -1,2 +1,2 @@
 /applications/traefik-cert-network-manager/cert-manager/issuers/secret-cf-token.yaml
-**/.terraform.lock.hcl
+**/.terraform.*
