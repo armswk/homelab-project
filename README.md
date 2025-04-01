@@ -19,6 +19,7 @@ Network:
 - cloudflare tunnel
 - tailscale
 - wireguard
+- SoftEther VPN (Not yet Setup)
 
 Monitoring:
 - grafana with influxdb(proxmox data query)
