@@ -1,0 +1,42 @@
+# These Resource Limits are in line with node requirements in the
+# Vault Reference Architecture for a Small Cluster
+server:
+  resources:
+    requests:
+      memory: 2Gi
+      cpu: 250m
+    limits:
+      memory: 4Gi
+      cpu: 250m
+  
+  # dev:
+  #   enabled: true
+
+# Vault UI
+# ui:
+#   enabled: true
+#   serviceType: "LoadBalancer"
+#   serviceNodePort: null
+#   externalPort: 8200
+
+# ui:
+#   enabled: true
+#   serviceType: "ClusterIP"
+
+ui:
+  enabled: true
+  serviceType: ClusterIP
+
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: traefik-external  # Make sure this matches your Traefik config
+    hosts:
+      - host: vault.local.narybits.site
+        paths:
+          - path: /
+            pathType: Prefix
+    tls:
+      - secretName: local-narybits-site-tls
+        hosts:
+          - vault.local.narybits.site
