@@ -8,6 +8,28 @@ server:
     limits:
       memory: 4Gi
       cpu: 250m
+
+  dataStorage:
+    enabled: true
+    size: 1Gi
+    storageClass: local-path  # or whatever you use for normal storage
+  
+  config: |
+    storage "raft" {
+      path    = "/vault/data"
+      node_id = "$(POD_NAME)"
+    }
+
+    service_registration "kubernetes" {}
+
+  extraVolumes:
+    - name: vault-backup
+      persistentVolumeClaim:
+        claimName: vault-backup-pvc
+
+  extraVolumeMounts:
+    - name: vault-backup
+      mountPath: /vault/backups
   
   # dev:
   #   enabled: true
@@ -26,17 +48,3 @@ server:
 ui:
   enabled: true
   serviceType: ClusterIP
-
-  ingress:
-    enabled: true
-    annotations:
-      kubernetes.io/ingress.class: traefik-external  # Make sure this matches your Traefik config
-    hosts:
-      - host: vault.local.narybits.site
-        paths:
-          - path: /
-            pathType: Prefix
-    tls:
-      - secretName: local-narybits-site-tls
-        hosts:
-          - vault.local.narybits.site
