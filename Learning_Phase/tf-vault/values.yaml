@@ -8,29 +8,7 @@ server:
     limits:
       memory: 4Gi
       cpu: 250m
-
-  dataStorage:
-    enabled: true
-    size: 1Gi
-    storageClass: local-path  # or whatever you use for normal storage
-  
-  config: |
-    storage "raft" {
-      path    = "/vault/data"
-      node_id = "$(POD_NAME)"
-    }
-
-    service_registration "kubernetes" {}
-
-  extraVolumes:
-    - name: vault-backup
-      persistentVolumeClaim:
-        claimName: vault-backup-pvc
-
-  extraVolumeMounts:
-    - name: vault-backup
-      mountPath: /vault/backups
-  
+    
   # dev:
   #   enabled: true
 

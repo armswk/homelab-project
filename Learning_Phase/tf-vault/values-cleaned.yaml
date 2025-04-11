@@ -1,0 +1,48 @@
+server:
+  # dev:
+  #   enabled: true
+  ha:
+    enabled: true
+    replicas: 2
+    raft:
+      enabled: true
+  
+  resources:
+    requests:
+      memory: 2Gi
+      cpu: 250m
+    limits:
+      memory: 4Gi
+      cpu: 250m
+
+  dataStorage:
+    enabled: true
+    size: 1Gi
+    storageClass: local-path
+
+  volumes:
+      - name: vault-backup
+        persistentVolumeClaim:
+          claimName: vault-backup-pvc
+
+  volumeMounts:
+      - name: vault-backup
+        mountPath: /vault/backups
+
+# ExtraConfig values are formatted as a multi-line string:
+config: |
+  ui = true
+  api_addr = "http://POD_IP:8200"
+  listener "tcp" {
+      tls_disable = 1
+      address     = "0.0.0.0:8200"
+  }
+  storage "raft" {
+      path    = "/vault/data"
+      node_id = "$(POD_NAME)"
+    }
+
+
+ui:
+  enabled: true
+  serviceType: ClusterIP

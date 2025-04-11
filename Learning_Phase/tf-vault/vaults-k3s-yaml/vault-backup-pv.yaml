@@ -9,6 +9,9 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   storageClassName: vault-nfs
+  mountOptions:
+     - hard
+     - nfsvers=4
   nfs:
     path: /zpool/k3s-storage/vaults-backup
     server: 10.7.7.110
