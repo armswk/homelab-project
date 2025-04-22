@@ -1,0 +1,36 @@
+variant: fcos
+version: 1.3.0
+passwd:
+  users:
+    - name: core
+      ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCzKGl5l0ia9SYokB65vEwgUYJ3cVW02LDxAOU7fzdXm5HRbrQRonvkzourT3ML8DJnw
+      password_hash: $y$j9T$OojNpjvkoZ7iqmuDa47Ja.$Tuqo0N2UuXQ1Mr3tT5/XuBaS2Kb8XUsb0K5STOni.BA
+storage:
+  files:
+    - path: /etc/ssh/sshd_config.d/20-enable-passwords.conf
+      mode: 0644
+      contents:
+        inline: |
+          # Fedora CoreOS disables SSH password login by default.
+          # Enable it.
+          # This file must sort before 40-disable-passwords.conf.
+          PasswordAuthentication yes
+    # - path: /etc/profile.d/systemd-pager.sh
+    #   mode: 0644
+    #   contents:
+    #     inline: |
+    #       # Tell systemd to not use a pager when printing information
+    #       export SYSTEMD_PAGER=cat
+    # - path: /etc/sysctl.d/20-silence-audit.conf
+    #   mode: 0644
+    #   contents:
+    #     inline: |
+    #       # Raise console message logging level from DEBUG (7) to WARNING (4)
+    #       # to hide audit messages from the interactive console
+    #       kernel.printk=4
+    # - path: /etc/hostname
+    #   mode: 0644
+    #   contents:
+    #     inline: |
+    #       1-basic
