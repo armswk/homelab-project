@@ -4,8 +4,8 @@ terraform {
     region  = "eu-central-1"
     bucket  = "siwa-terraform-state"
     key     = "terraform-state"
-    use_lockfile = true
     encrypt = true
+    use_lockfile = true
     profile = "terraform-dev"
   }
 

@@ -5,6 +5,7 @@ terraform {
     bucket  = "siwa-terraform-state"
     key     = "terraform-state"
     encrypt = true
+    use_lockfile = true
     profile = "terraform-dev"
   }
 
