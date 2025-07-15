@@ -3,5 +3,5 @@
   "newFileFolderPath": "00-Inbox",
   "attachmentFolderPath": "./attachments",
   "livePreview": true,
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "visible"
 }
