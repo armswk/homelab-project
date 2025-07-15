@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "430b4e30cb7be3a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa94b31ddcdc153d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c936df55ec3ed89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-Inbox/Testing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Testing"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6f75fa29ec7ecb26",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "91ff6e17b47f4daf",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "257e92e255cb8586",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "2b154925ffac7f86",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "6884f64d240a8d19",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "169619b817f452ef",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "dcb6835089f850d0",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "03-Resources/Obsidian/Part 1 - Obsidian Course/04-Vault Structure.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": false
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "26816fb2359567ea",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "03-Resources/Obsidian/Part 1 - Obsidian Course/04-Vault Structure.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "a65d4c9860018fa7",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "55ded30a11d93f44",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {},
+          "icon": "git-pull-request",
+          "title": "Source Control"
+        }
+      }
+    ],
+    "currentTab": 3
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0c936df55ec3ed89",
+  "lastOpenFiles": [
+    "03-Resources/Obsidian/Part 1 - Obsidian Course/12-Note-Templates.md",
+    "03-Resources/Obsidian/Part 2 - Obsidian Zettelkasten/07-Full Demo of Zettelkasten Note-taking.md",
+    "03-Resources/Obsidian/Part 2 - Obsidian Zettelkasten/01-Introduction & Origins.md",
+    "03-Resources/Obsidian/Part 2 - Obsidian Zettelkasten/05-The Zettelkasten Lifestyle.md",
+    "03-Resources/Obsidian/Part 2 - Obsidian Zettelkasten/03-How to Take Notes.md",
+    "03-Resources/Obsidian/Part 2 - Obsidian Zettelkasten/02-Zettelkasten & Productivity.md",
+    "03-Resources/Obsidian/Part 2 - Obsidian Zettelkasten/06-Implementation in Obsidian.md",
+    "05-Plugins/Plugin-List.md",
+    "05-Plugins",
+    "03-Resources/Vim/vim-notes.md",
+    "03-Resources/Vim",
+    "03-Resources/Linux/Part 4 - Extended Projects/attachments/Pasted image 20250616164146.png",
+    "03-Resources/Linux/Part 4 - Extended Projects/02-Remote Desktop.md",
+    "03-Resources/Linux/Part 4 - Extended Projects/attachments",
+    "03-Resources/Linux/Part 4 - Extended Projects/01-Linux Course Extended Project - Dual Boot.md",
+    "03-Resources/Linux/Part 4 - Extended Projects",
+    "03-Resources/Linux/Part 1 - Absolute Beginners/06-Learn & Use Vim.md",
+    "03-Resources/Linux/Part 1 - Absolute Beginners/02-Get A Laptop.md",
+    "03-Resources/Linux/Part 1 - Absolute Beginners/05-Use It.md",
+    "03-Resources/Linux/Part 1 - Absolute Beginners/04-MacOS & WSL.md",
+    "03-Resources/Linux/Part 1 - Absolute Beginners/03-Install Ubuntu Desktop.md",
+    "03-Resources/Linux/Part 1 - Absolute Beginners/01-Get Your Hands Dirty.md",
+    "03-Resources/Linux/Part 1 - Absolute Beginners",
+    "03-Resources/Linux/Part 2 - Arch Linux/17-Hyprland Window Rules.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/04-Partitioning the Disks.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/14-Some Housekeeping.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/12-Inspecting our system.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/07-fstab + man pages.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/02-Creating an Install medium.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/16-YAY - Installing from the AUR.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/22-Setting up my dotfiles.md",
+    "03-Resources/Linux/Part 2 - Arch Linux/20-Lock screen & Idle Daemon.md",
+    "03-Resources/Linux/Part 2 - Arch Linux",
+    "03-Resources/Obsidian/Part 3 - Setting & Achieving Goals",
+    "/00-Inbox",
+    "/03-Resources/Linux/Part 4 - Extended Projects/attachments/Pasted image 20250616164146.png",
+    "/05-Plugins",
+    "/03-Resources/Vim"
+  ]
+}

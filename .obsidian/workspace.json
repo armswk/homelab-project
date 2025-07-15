@@ -1,0 +1,253 @@
+{
+  "main": {
+    "id": "adda482fa370e900",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a9b5a3b9af02a1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a80623e124b22fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "1d53aa632a0758e7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "041735b99a84dcec",
+    "type": "split",
+    "children": [
+      {
+        "id": "8556a7b163660dd3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "52309c81cb53ab9b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f8f531e33b989944",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "76b03268583fc67a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 258.5
+  },
+  "right": {
+    "id": "ed429dcef5bf77da",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dad6bf8b7a201ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1dacd2d40a96da1b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03-Resources/Obsidian/Part 1 - Obsidian Course/12-Note-Templates.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 12-Note-Templates"
+            }
+          },
+          {
+            "id": "777205a2fa8334b9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03-Resources/Obsidian/Part 1 - Obsidian Course/12-Note-Templates.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 12-Note-Templates"
+            }
+          },
+          {
+            "id": "be72c7de80c9330c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6c9a70158fd548ac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03-Resources/Obsidian/Part 1 - Obsidian Course/12-Note-Templates.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 12-Note-Templates"
+            }
+          },
+          {
+            "id": "6bf5bc7555e32696",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "da9c97a3f967cbcb",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "52309c81cb53ab9b",
+  "lastOpenFiles": [
+    "docker-compose/npm.md",
+    "Infrastructure/linux/ssh.md",
+    "Kubercraft/03-Resources/Advanced Obsidian - Goal Setting and Periodic Notes/01 - Theory.md",
+    "Kubercraft/03-Resources/neovim/Part 40 - ZSH/04-dot_zshrc.md",
+    "Kubercraft/00-Inbox/0.md",
+    "Ausbildung/03-Resources/IHK.md",
+    "Kubercraft/03-Resources/Advanced Obsidian - Goal Setting and Periodic Notes/02 - Practical application in Obsidian.md",
+    "Ausbildung/02-Areas/Day 1.md",
+    "Ausbildung/02-Areas/attachments/Pasted image 20250707170908.png",
+    "Ausbildung/02-Areas/attachments",
+    "Kubercraft/01-Projects/Kubecraft Web Scraping.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 6 - Helm/01-Introduction Helm.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 7 - Monitoring/01-Installing the kube-prometheus-stack.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 8 - Outro/01-outro.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 5 - K9S/01-K9s.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 4 - Storage/02-Persistent Storage.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 4 - Storage/01-Ephemeral Storage.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 3 - Networking/03-Ingress.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 3 - Networking/02-Services.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 3 - Networking/01-Kubernetes Networking.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 2 - Deployments/03-Deployments - Part 3 - Mealie.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 2 - Deployments/02-Deployments - Part 2 - Namespaces.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 2 - Deployments/01-Deployments.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 1 - Kubernetes/04-Interacting with Pods.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 1 - Kubernetes/03-Pods as Code - YAML.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 1 - Kubernetes/02-Pods.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 1 - Kubernetes/01-What is Kubernetes Why do we need it.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/02-Introduction/01-Introduction.md",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/02-Introduction/desktop.ini",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 8 - Outro",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 7 - Monitoring",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 6 - Helm",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 5 - K9S",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 4 - Storage",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 3 - Networking",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 2 - Deployments",
+    "Kubercraft/03-Resources/Kubernetes Fundamentals/Part 1 - Kubernetes",
+    "Kubercraft/03-Resources/neovim/Part 10 - Dev Containers/attachments/Pasted image 20250618141409.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140325.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140318.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140309.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140242.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140229.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140216.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140206.png",
+    "Kubercraft/03-Resources/neovim/Part 1 - Introduction/attachments/Pasted image 20250618140157.png",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,21 @@
+/* responsive-video-embed.css */
+
+.responsive-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* For 16:9 aspect ratio (9 / 16 = 0.5625) */
+    /* Change padding-bottom if your video has a different aspect ratio */
+    /* For 4:3 video, use padding-bottom: 75%; (3 / 4 = 0.75) */
+    overflow: hidden;
+    margin-bottom: 1em; /* Space below the video */
+}
+
+.responsive-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe border */
+}

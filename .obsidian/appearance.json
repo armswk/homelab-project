@@ -1,0 +1,7 @@
+{
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "responsive-iframes",
+    "responsive-video-embed"
+  ]
+}

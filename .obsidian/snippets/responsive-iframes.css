@@ -1,0 +1,23 @@
+/* responsive-iframes.css */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+    overflow: hidden; /* Hides any overflow from the iframe */
+    margin-bottom: 1em; /* Adds some space below the video */
+    /* Optional: Add a max-width if you don't want videos to stretch too wide */
+    /* max-width: 800px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
