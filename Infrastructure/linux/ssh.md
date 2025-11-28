@@ -72,3 +72,11 @@ cd /path/to/project1
 git config user.email "superman@example.com"
 git config user.name  "Super Man"
 ```
+
+## For SSH inside WSL
+Ref. Guide: https://github.com/ajithmoola/wsl-ssh-guide <br>
+Install the openssh-server in WSL and then open the powershell/cmd to create a proxy
+```
+netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=$((wsl hostname -I).trim())
+```
+Afterward go to Windows Defender -> Adavance -> add Inbound Rules for port 22
